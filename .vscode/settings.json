@@ -1,17 +1,17 @@
 {
     "files.eol": "\n",
     "python.autoComplete.extraPaths": [
-        "lib",
+        "apps/freecell/lib",
         "D:\\CODE\\Python\\play32_dev",
         "D:\\CODE\\Python\\play32_dev\\lib",
-        "/run/media/dreagonmon/Data/Code/Python/play32-dev",
-        "/run/media/dreagonmon/Data/Code/Python/play32-dev/lib",
+        "../play32-dev",
+        "../play32-dev/lib",
     ],
     "python.analysis.extraPaths": [
-        "lib",
+        "apps/freecell/lib",
         "D:\\CODE\\Python\\play32_dev",
         "D:\\CODE\\Python\\play32_dev\\lib",
-        "/run/media/dreagonmon/Data/Code/Python/play32-dev",
-        "/run/media/dreagonmon/Data/Code/Python/play32-dev/lib",
+        "../play32-dev",
+        "../play32-dev/lib",
     ]
 }
