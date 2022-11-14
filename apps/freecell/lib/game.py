@@ -83,7 +83,7 @@ def update_table():
             if l < cols_size[col]:
                 card = fc.get_card_at(col, l)
                 table_data[off : off + 2] = get_card_tiles(card)
-            elif l == cols_size[col]:
+            elif l == cols_size[col] and cols_size[col] > 0:
                 table_data[off : off + 2] = TILES_BOTTOM
             else:
                 table_data[off : off + 2] = TILES_EMPTY_SPACE
@@ -214,7 +214,7 @@ def game_loop():
                             if key == hal_keypad.KEY_UP and cursor < 8:
                                 cursor += 8
                                 need_update_table = True
-                        if view_offset + screen_lines > scene_lines:
+                        if view_offset + screen_lines >= scene_lines:
                             view_offset = scene_lines - screen_lines
                             if key == hal_keypad.KEY_DOWN and cursor >= 8:
                                 cursor -= 8
