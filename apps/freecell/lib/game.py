@@ -1,7 +1,6 @@
 from freecell import random_seed, FreeCell, split_card, CARD_EMPTY
 from utime import sleep_ms
-from play32hw.cpu import cpu_speed_context, FAST, VERY_SLOW
-from machine import lightsleep
+from play32hw.cpu import cpu_speed_context, FAST, VERY_SLOW, sleep
 import hal_screen, hal_keypad
 import tiles
 
@@ -242,4 +241,4 @@ def game_loop():
                                 update_screen()
                                 render()
                                 possible = fc.possible_move()
-            lightsleep(10)
+            sleep(10)

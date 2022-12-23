@@ -1,10 +1,6 @@
 from play32sys import path
 from graphic.pbm import read_image
-try:
-    from graphic.framebuf_helper import get_white_color, ensure_same_format, crop_framebuffer
-except:
-    from xframebuf_helper import get_white_color, ensure_same_format, crop_framebuffer
-import hal_screen
+from graphic.framebuf_helper import get_white_color, ensure_same_format, crop_framebuffer
 import framebuf
 
 TILES = []
